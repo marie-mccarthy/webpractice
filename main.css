@@ -1,0 +1,71 @@
+/* :root {
+    --green:	#BDBCBC;
+    --white: lightsteelblue;
+    --black: #000000;
+  } */
+    :root {
+    --green:	#BDBCBC;
+    --white: lightsteelblue;
+    --black: #000000;
+  }
+  * {
+    color: var(--fontColor);
+    font-family: helvetica;
+  }
+  body {
+      background: var(--bg);
+  }
+ul {
+    font-family: helvetica;
+}
+li {
+    list-style: circle;
+  }
+  
+  .list {
+    list-style: square;
+  }
+  
+  #msg {
+    font-family: monospace;
+  }
+  .light-theme {
+    --bg: var(--green);
+    --fontColor: var(--black);
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
+  }
+  
+  .dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--green);
+    --btnBg: var(--white);
+    --btnFontColor: var(--black);
+  }
+  .btn {
+    display: block;
+    width: 85px;
+    height: 40px;
+    border-radius: 400px;
+    outline-color: blue;
+  }
+  .rwr {
+    width: 100%;
+    padding-right: 12px;
+    padding-left: 12px;
+    margin-right: auto;
+    margin-left: auto;
+    border-left: thick dodgerblue;
+    overflow: auto;
+  }
+  .format{
+    position: relative;
+    z-index: 1;
+    max-width: 360px;
+    padding: 25px;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 25px;
+    color: black;
+  }
+  .btn:focus { outline-style: none; }
